@@ -14,10 +14,13 @@
         kutya optimális testfelépítése, illetve viselkedése, ezért a különböző
         feladatokra kitenyésztett kutyafajták testfelépítése nagymértékben
         eltér. A világon az <a href="https://www.fci.be/en/">FCI</a> mintegy 430
-        kutyafajtát tart nyilván, és a mai napig folyik új fajták kitenyésztése:
+        kutyafajtát tart nyilván, és a mai napig folyik új fajták kitenyésztése
       </h4>
     </div>
     <div id="content">
+      <h4>
+        Ez csak néhány közülük, hiszen több száz fajta létezik még ezeken kívül:
+      </h4>
       <ul>
         <li>Német juhász</li>
         <li>Golden Retriever</li>
@@ -29,13 +32,38 @@
         <li>Boxer</li>
         <li>és Mopsz!</li>
       </ul>
-      <h4>
-        Ez csak néhány közülük, hiszen több száz fajta létezik még ezeken kívül!
-      </h4>
     </div>
     <div id="picture">
       <h4>Ö itt a kedvenc kutyám:</h4>
-      <img src="imgs/dog.png" alt="Egy kutya" />
+      <img src="imgs/dog.png" alt="Cirmi, a labrador" />
+    </div>
+    <div id="shop">
+      <h4>Nem tetszenek a kutyák? Hozd létre itt saját boltodat!</h4>
+      <p>
+        Legalább 3 terméket hozzá kell adnod, hogy a Számoljunk! gomb működjön!
+      </p>
+      <label for="input-name">A termék neve:</label>
+      <input type="text" id="input-name" name="input-name" required />
+
+      <label for="input-cost">A termék ára (Ft):</label>
+      <input type="number" id="input-cost" name="input-cost" min="0" required />
+
+      <div id="buttons">
+        <button class="submit-button" onclick="addNewItem()">Hozzáadás</button>
+        <button class="submit-button" onclick="calculateData()">
+          Számoljunk!
+        </button>
+      </div>
+    </div>
+    <div id="shop-calculations" class="hidden">
+      <h4>A legkisebb termék összege:</h4>
+      <p id="smallest-cost"></p>
+      <h4>A legkisebb összegű termék neve:</h4>
+      <p id="smallest-name"></p>
+      <h4>A termékek átlagára:</h4>
+      <p id="average-cost"></p>
+      <h4>A termékek átgalának szórása:</h4>
+      <p id="standard-deviance-cost"></p>
     </div>
   </body>
 </html>

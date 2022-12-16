@@ -15,7 +15,8 @@ h1 {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    margin: 20px;
+    margin: 20px auto;
+    width: 60%;
 }
 
 #content {
@@ -27,7 +28,7 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     margin: auto;
-    width: 50%;
+    width: 60%;
 }
 
 #picture {
@@ -39,7 +40,63 @@ h1 {
     text-align: center;
 }
 
+#shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    width: 60%;
+}
+
+#shop p {
+    margin-top: 0px;
+    padding: 0px;
+    color: red
+}
+
+.shown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit-button {
+    background-color: #d2d4ff;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 img {
     max-width: 300px;
     height: auto;
 }
+
+input {
+    border: none;
+    border-bottom: 1px solid #d2d4ff;
+    width: 200px;
+}
+
+
