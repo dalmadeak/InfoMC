@@ -54,7 +54,6 @@ function addNewItem() {
     this.items.push({ name: name, cost: cost });
     document.getElementById("input-name").value = "";
     document.getElementById("input-cost").value = "";
-    console.log(this.items);
 }
 /**
  * Kiszámolja az átlagot, a legkisebb elemet és a szórást
