@@ -67,8 +67,6 @@ function addNewItem(): void {
 
   (<HTMLInputElement>document.getElementById("input-name")!).value = "";
   (<HTMLInputElement>document.getElementById("input-cost")!).value = "";
-
-  console.log(this.items);
 }
 
 /**
